@@ -1,0 +1,8 @@
+{
+  "name": "vue-vuex-router-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:NaokiOtsu/vue-vuex-router-boilerplate.git",
+  "author": "Naoki Otsu @melo15",
+  "license": "MIT"
+}
