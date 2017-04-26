@@ -19,7 +19,7 @@ module.exports = {
   entry: {
     app: [
       'vue',
-      config.src_path + '/javascripts/app.js'
+      config.src_path.javascripts + '/app.js'
     ]
   },
 
