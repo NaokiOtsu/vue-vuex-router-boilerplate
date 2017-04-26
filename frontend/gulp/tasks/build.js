@@ -5,6 +5,9 @@ gulp.task('build', (callback) => {
   runSequence(
     'clean',
     [
+      'sprites'
+    ],
+    [
       'scripts',
       'stylesheets'
     ],
