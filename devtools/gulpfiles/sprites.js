@@ -4,6 +4,8 @@ import gulp from 'gulp';
 import spritesmith from 'gulp.spritesmith';
 import config from '../config';
 
+const dest_sprite_path = config.is_production ? config.PUBLIC_PATH : config.DEST_PATH;
+
 const getDirectorys = dir_path => {
   try {
     return fs.readdirSync(dir_path).filter(file => {
@@ -20,11 +22,11 @@ gulp.task('sprites', (callback) => {
   if (!directorys) return;
 
   directorys.forEach(directory => {
-    const sprite_data = gulp.src(sprite_path + '/' + directory + '/*.png')
+    const sprite_data = gulp.src(`${sprite_path}/${directory}/*.png`)
       .pipe(spritesmith({
-        imgName: 'sprite_' + directory + '.png',
-        imgPath: '/images/sprite_' + directory + '.png',
-        cssName: '_sprite_' + directory + '.scss',
+        imgName: `sprite_${directory}.png`,
+        imgPath: `/images/sprite_${directory}.png`,
+        cssName: `_sprite_${directory}.scss`,
         cssFormat: 'scss',
         algorithm: 'top-down',
         algorithmOpts: {
@@ -34,11 +36,10 @@ gulp.task('sprites', (callback) => {
       }));
     
     sprite_data.img
-      .pipe(gulp.dest(`${config.DEST_PATH}/images`));
+      .pipe(gulp.dest(`${dest_sprite_path}/images`));
     
     sprite_data.css.pipe(gulp.dest(`${config.SRC_PATH}/stylesheets/sprites`)).on('end', () => {
       callback();
     });
   });
 });
-

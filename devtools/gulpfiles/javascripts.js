@@ -4,7 +4,9 @@ import webpackStream from 'webpack-stream';
 import webpackConfig from './webpack.config';
 import config from '../config';
 
+const dest_path = config.is_production ? config.PUBLIC_PATH : config.DEST_PATH;
+
 gulp.task('javascripts', () => {
   return webpackStream(webpackConfig, webpack)
-    .pipe(gulp.dest(`${config.DEST_PATH}/javascripts`));
+    .pipe(gulp.dest(`${dest_path}/javascripts`));
 });

@@ -1,8 +1,8 @@
-
+@import 'normalize';
 @import 'sprites/sprite_icons';
 
 .test {
-  @include sprite($icon_home);
+  @include sprite($icon_first);
   display: flex;
 }
 
