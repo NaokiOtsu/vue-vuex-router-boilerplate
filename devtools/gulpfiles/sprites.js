@@ -15,7 +15,7 @@ const getDirectorys = dir_path => {
 }
 
 gulp.task('sprites', (callback) => {
-  const sprite_path = config.src_path.sprites;
+  const sprite_path = `${config.SRC_PATH}/images/sprites`;
   const directorys = getDirectorys(sprite_path);
   if (!directorys) return;
 
@@ -34,9 +34,9 @@ gulp.task('sprites', (callback) => {
       }));
     
     sprite_data.img
-      .pipe(gulp.dest(config.public_path.sprites));
+      .pipe(gulp.dest(`${config.DEST_PATH}/images`));
     
-    sprite_data.css.pipe(gulp.dest('./src/stylesheets/sprites')).on('end', () => {
+    sprite_data.css.pipe(gulp.dest(`${config.SRC_PATH}/stylesheets/sprites`)).on('end', () => {
       callback();
     });
   });

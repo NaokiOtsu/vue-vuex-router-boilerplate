@@ -4,8 +4,10 @@ import sass from 'gulp-sass';
 import autoprefixer from 'gulp-autoprefixer';
 import config from '../config';
 
+const dest_path = config.is_production ? config.PUBLIC_PATH : config.DEST_PATH;
+
 gulp.task('stylesheets', function () {
-  return gulp.src(config.src_path.stylesheets + '/**/*.scss')
+  return gulp.src(`${config.SRC_PATH}/stylesheets/**/*.scss`)
     .pipe(plumber())
     .pipe(sass({
       outputStyle: config.is_production ? 'compressed' : 'expanded',
@@ -16,5 +18,5 @@ gulp.task('stylesheets', function () {
       browsers: ['last 2 versions', 'Android >= 4', 'ios >= 8'],
       cascade: false
     }))
-    .pipe(gulp.dest(config.public_path.stylesheets));
+    .pipe(gulp.dest(`${dest_path}/stylesheets`));
 });

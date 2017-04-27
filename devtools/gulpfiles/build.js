@@ -8,7 +8,7 @@ gulp.task('build', (callback) => {
       'sprites'
     ],
     [
-      'scripts',
+      'javascripts',
       'stylesheets'
     ],
     callback

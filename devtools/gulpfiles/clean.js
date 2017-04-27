@@ -5,9 +5,9 @@ import config from '../config';
 gulp.task('clean', (callback) => {
   return del(
     [
-      config.public_path.images      + '/**/*',
-      config.public_path.javascripts + '/**/*',
-      config.public_path.stylesheets + '/**/*'
+      `${config.DEST_PATH}/images/**/*`,
+      `${config.DEST_PATH}/javascripts/**/*`,
+      `${config.DEST_PATH}/stylesheets/**/*`
     ],
     { force: true },
     callback

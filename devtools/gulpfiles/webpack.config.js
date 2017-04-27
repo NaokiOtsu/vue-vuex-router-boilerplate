@@ -1,5 +1,5 @@
 import webpack from 'webpack';
-import config from './config';
+import config from '../config';
 
 const plugins = [];
 
@@ -19,7 +19,7 @@ module.exports = {
   entry: {
     app: [
       'vue',
-      config.src_path.javascripts + '/app.js'
+      `${config.SRC_PATH}/javascripts/app.js`
     ]
   },
 

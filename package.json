@@ -1,7 +1,6 @@
 {
   "name": "vue-vuex-router-boilerplate",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "git@github.com:NaokiOtsu/vue-vuex-router-boilerplate.git",
   "author": "Naoki Otsu @melo15",
   "license": "MIT",
@@ -9,8 +8,8 @@
     "node": ">=4.3.0 <5.0.0 || >=5.10"
   },
   "scripts": {
-    "start": "gulp serve",
-    "build": "NODE_ENV=production gulp build"
+    "start": "cd ./devtools/gulpfiles && NODE_ENV=development gulp server",
+    "build": "cd ./devtools/gulpfiles && NODE_ENV=production gulp build"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
