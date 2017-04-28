@@ -70,6 +70,13 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
+
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
 /* WEBPACK VAR INJECTION */(function(global) {/*!
  * Vue.js v2.2.6
  * (c) 2014-2017 Evan You
@@ -9390,43 +9397,6 @@ return Vue$3;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _vue = __webpack_require__(0);
-
-var _vue2 = _interopRequireDefault(_vue);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Child = {
-  template: '\n    <div class="container" @click="hoge">\n      <slot text="hello from child"></slot>\n    </div>\n  ',
-  data: function data() {
-    return {
-      someChildProperty: true
-    };
-  },
-  methods: {
-    hoge: function hoge() {
-      console.log(this.$parent.$refs.child.$el);
-    }
-  }
-};
-
-var vm = new _vue2.default({
-  el: '#app',
-  components: {
-    'child-component': Child
-  },
-  data: {
-    message: 'hogeee'
-  }
-});
-
-/***/ }),
 /* 2 */
 /***/ (function(module, exports) {
 
@@ -9457,8 +9427,8 @@ module.exports = g;
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(0);
-module.exports = __webpack_require__(1);
+__webpack_require__(1);
+module.exports = __webpack_require__(0);
 
 
 /***/ })

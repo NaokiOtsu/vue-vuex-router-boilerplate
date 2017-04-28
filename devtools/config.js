@@ -2,9 +2,9 @@ import path from 'path';
 
 const is_production = process.env.NODE_ENV === 'production';
 
-const ROOT_PATH = path.resolve(__dirname, '../');
-const SRC_PATH = ROOT_PATH + '/src';
-const DEST_PATH = ROOT_PATH + '/dest';
+const ROOT_PATH   = path.resolve(__dirname, '../');
+const SRC_PATH    = ROOT_PATH + '/src';
+const DEST_PATH   = ROOT_PATH + '/dest';
 const PUBLIC_PATH = ROOT_PATH + '/public';
 
 module.exports = {

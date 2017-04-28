@@ -36,7 +36,7 @@ gulp.task('sprites', (callback) => {
       }));
     
     sprite_data.img
-      .pipe(gulp.dest(`${dest_sprite_path}/images`));
+      .pipe(gulp.dest(`${dest_sprite_path}/images/sprites`));
     
     sprite_data.css.pipe(gulp.dest(`${config.SRC_PATH}/stylesheets/sprites`)).on('end', () => {
       callback();

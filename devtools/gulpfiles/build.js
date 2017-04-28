@@ -12,7 +12,6 @@ gulp.task('build', (callback) => {
     [
       'jpegmin',
       'pngmin',
-      'eslint',
       'javascripts',
       'stylesheets'
     ],
