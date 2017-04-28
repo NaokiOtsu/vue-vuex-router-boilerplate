@@ -14,6 +14,7 @@ gulp.task('server', ['clean', 'sprites', 'stylesheets', 'eslint', 'javascripts',
     notify: false
   });
 
+  // .html, .css, .js, .vueのwatch
   watch([
     `${config.DEST_PATH}/**/*.html`,
     `${config.DEST_PATH}/stylesheets/**/*.css`,
@@ -22,7 +23,8 @@ gulp.task('server', ['clean', 'sprites', 'stylesheets', 'eslint', 'javascripts',
     reload();
   });
 
-  watch(`${config.SRC_PATH}/images/sprites/**/*`, () => {
+  // 画像のwatch
+  watch(`${config.SRC_PATH}/images/**/*`, () => {
     runSequence(
       ['clean:images', 'clean:stylesheets'],
       'copy',
@@ -31,6 +33,17 @@ gulp.task('server', ['clean', 'sprites', 'stylesheets', 'eslint', 'javascripts',
     );
   });
 
+  // htmlのwatch
+  // watch(`${config.SRC_PATH}/**/*.html`, () => {
+  //   runSequence(
+  //     'copy',
+  //     () => {
+  //       reload();
+  //     }
+  //   );
+  // });
+
+  gulp.watch(`${config.SRC_PATH}/**/*.html`, ['copy']);
   gulp.watch(`${config.SRC_PATH}/stylesheets/**/*.scss`, ['stylesheets']);
   gulp.watch(`${config.SRC_PATH}/javascripts/**/*.js`, ['eslint', 'javascripts']);
 });

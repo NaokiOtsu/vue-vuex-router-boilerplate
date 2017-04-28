@@ -18,11 +18,6 @@
             }
         }],
         "indent": [1, 2],
-        "key-spacing": [2, {
-            "beforeColon": false,
-            "afterColon": true,
-            "align": "colon"
-        }],
         "no-unused-vars": 2,
         "comma-dangle": [1, "only-multiline"]
     },
