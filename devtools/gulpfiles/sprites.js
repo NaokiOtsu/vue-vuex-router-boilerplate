@@ -25,7 +25,7 @@ gulp.task('sprites', (callback) => {
     const sprite_data = gulp.src(`${sprite_path}/${directory}/*.png`)
       .pipe(spritesmith({
         imgName: `sprite_${directory}.png`,
-        imgPath: `/images/sprite_${directory}.png`,
+        imgPath: `/images/sprites/sprite_${directory}.png`,
         cssName: `_sprite_${directory}.scss`,
         cssFormat: 'scss',
         algorithm: 'top-down',

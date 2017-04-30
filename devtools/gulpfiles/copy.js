@@ -11,6 +11,7 @@ gulp.task('copy', () => {
     `${copy_base_path}/**/*`,
     `${copy_base_path}/**/.*`,
     `!${copy_base_path}/**/*.js`,
+    `!${copy_base_path}/**/*.vue`,
     `!${copy_base_path}/**/*.scss`,
     `!${copy_base_path}/**/*.ai`,
     `!${copy_base_path}/**/*.sketch`,

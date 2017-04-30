@@ -9,6 +9,7 @@
         "es6": true
     },
     "rules": {
+        "space-before-function-paren": 0,
         "no-multi-spaces": [2, {
             "exceptions": {
                 "Property": true,

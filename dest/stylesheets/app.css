@@ -411,7 +411,7 @@ template {
 }
 
 .test {
-  background-image: url(/images/sprite_icons.png);
+  background-image: url(/images/sprites/sprite_icons.png);
   background-position: 0px -188px;
   width: 300px;
   height: 300px;
