@@ -1,7 +1,8 @@
 import Vue from 'vue'
+import App from './App.vue'
 import VueRouter from 'vue-router'
-import Sample from './components/Sample.vue';
-import Sample1 from './components/Sample1.vue';
+import Sample from './components/Sample.vue'
+import Sample1 from './components/Sample1.vue'
 
 Vue.use(VueRouter)
 
