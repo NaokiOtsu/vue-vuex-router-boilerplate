@@ -6,13 +6,13 @@ import getters from './getters'
 
 Vue.use(Vuex)
 
-export function createStore () {
-  return new Vuex.Store({
-    state: {
-      hoge: 111
-    },
-    actions,
-    mutations,
-    getters
-  })
+const state = {
+  count: 0
 }
+
+export default new Vuex.Store({
+  state,
+  getters,
+  actions,
+  mutations
+})
