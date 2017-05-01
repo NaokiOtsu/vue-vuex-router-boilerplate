@@ -1,12 +1,12 @@
 <template>
-  <div class="hoge">
-    hogeeeeeee
+  <div class="foo-container">
+    Foo
   </div>
 </template>
 
 <script>
 export default {
-  name: 'fuga'
+  name: 'foo'
 }
 </script>
 

@@ -1,14 +1,16 @@
 <template>
-  <div class="hoge">
-    fffffffff
+  <div class="bar-container">
+    Bar
     <div class="test1">000</div>
   </div>
 </template>
 
 <script>
 export default {
+  name: 'bar',
+
   created() {
-    console.log('Sample1 vue')
+    // console.log('Sample1 vue')
   }
 }
 </script>

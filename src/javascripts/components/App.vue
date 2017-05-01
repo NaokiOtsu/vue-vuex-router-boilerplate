@@ -1,8 +1,19 @@
 <template>
   <div class="app-container">
     Clicked: {{ $store.state.count }} times, count is {{ evenOrOdd }}
-    <button @click="increment">+</button>
+    <button @click="increment(111)">+</button>
     <button @click="decrement">-</button>
+    <button @click="getDummyData">getDummyData</button>
+
+    <ul>
+      <li v-for="data in dummyData">{{ data.title }}</li>
+    </ul>
+
+    <router-link to="/">home</router-link>
+    <router-link to="/foo">Foo</router-link>
+    <router-link to="/bar">Bar</router-link>
+
+    <router-view></router-view>
   </div>
 </template>
 
@@ -10,12 +21,21 @@
 import { mapGetters, mapActions } from 'vuex'
 
 export default {
+  name: 'app',
+
+  created () {
+    this.getDummyData()
+  },
+
   computed: mapGetters([
-    'evenOrOdd'
+    'evenOrOdd',
+    'dummyData'
   ]),
+
   methods: mapActions([
     'increment',
-    'decrement'
+    'decrement',
+    'getDummyData'
   ])
 }
 </script>

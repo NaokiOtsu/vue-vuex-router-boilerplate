@@ -7,7 +7,8 @@ import getters from './getters'
 Vue.use(Vuex)
 
 const state = {
-  count: 0
+  count: 0,
+  dummyData: []
 }
 
 export default new Vuex.Store({

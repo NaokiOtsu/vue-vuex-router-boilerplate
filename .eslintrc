@@ -20,7 +20,10 @@
         }],
         "indent": [1, 2],
         "no-unused-vars": 2,
-        "comma-dangle": [1, "only-multiline"]
+        "comma-dangle": [1, "only-multiline"],
+        "no-param-reassign": [2, {
+            "props": false
+        }]
     },
     "plugins": [
         "import"
