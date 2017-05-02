@@ -12,7 +12,8 @@ gulp.task('server', () => {
     'clean',
     [
       'sprites',
-      'copy'
+      'copy',
+      'svg'
     ],
     [
       'javascripts',
@@ -35,7 +36,8 @@ gulp.task('server', () => {
         watch([
           `${config.DEST_PATH}/**/*.html`,
           `${config.DEST_PATH}/stylesheets/**/*.css`,
-          `${config.DEST_PATH}/javascripts/**/*.{js,vue}`
+          `${config.DEST_PATH}/javascripts/**/*.{js,vue}`,
+          `${config.DEST_PATH}/svg/**/*.svg`
         ], () => {
           reload();
         });
@@ -53,6 +55,7 @@ gulp.task('server', () => {
         gulp.watch(`${config.SRC_PATH}/**/*.html`, ['copy']);
         gulp.watch(`${config.SRC_PATH}/stylesheets/**/*.scss`, ['stylesheets']);
         gulp.watch(`${config.SRC_PATH}/javascripts/**/*.{js,vue}`, ['javascripts']);
+        gulp.watch(`${config.SRC_PATH}/svg/**/*.svg`, ['svg']);
       }
     }
   );

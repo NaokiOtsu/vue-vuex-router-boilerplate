@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -410,6 +411,63 @@ template {
   display: none;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+  font-size: 1.6em;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-size-adjust: 100%;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+ul,
+ol,
+dl,
+dt,
+dd,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: normal;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+svg {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.hide {
+  display: none;
+}
+
 .test {
   background-image: url(/images/sprites/sprite_icons.png);
   background-position: 0px -188px;
@@ -419,4 +477,10 @@ template {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.icon-star {
+  width: 100px;
+  height: 100px;
+  fill: red;
 }

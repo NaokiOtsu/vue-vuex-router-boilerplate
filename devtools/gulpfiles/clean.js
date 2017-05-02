@@ -9,7 +9,8 @@ gulp.task('clean', (callback) => {
     [
       `${dir_path}/images/**/*`,
       `${dir_path}/javascripts/**/*`,
-      `${dir_path}/stylesheets/**/*`
+      `${dir_path}/stylesheets/**/*`,
+      `${dir_path}/svg/**/*`
     ],
     { force: true },
     callback
@@ -35,6 +36,14 @@ gulp.task('clean:stylesheets', (callback) => {
 gulp.task('clean:javascripts', (callback) => {
   return del(
     `${dir_path}/javascripts/**/*`,
+    { force: true },
+    callback
+  );
+});
+
+gulp.task('clean:svg', (callback) => {
+  return del(
+    `${dir_path}/svg/**/*`,
     { force: true },
     callback
   );

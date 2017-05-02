@@ -30,12 +30,16 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-changed": "^3.0.0",
+    "gulp-cheerio": "^0.6.2",
     "gulp-eslint": "^3.0.1",
     "gulp-ignore": "^2.0.2",
     "gulp-imagemin": "^3.2.0",
     "gulp-notify": "^3.0.0",
     "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
+    "gulp-svgmin": "^1.2.3",
+    "gulp-svgstore": "^6.1.0",
     "gulp-watch": "^4.3.11",
     "gulp.spritesmith": "^6.4.0",
     "imagemin-jpegoptim": "^5.0.0",
@@ -50,6 +54,7 @@
     "webpack-stream": "^3.2.0"
   },
   "dependencies": {
+    "svg4everybody": "^2.1.8",
     "vue": "^2.3.0",
     "vue-router": "^2.4.0",
     "vuex": "^2.3.1"

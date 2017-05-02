@@ -9,6 +9,10 @@
       <li v-for="data in dummyData">{{ data.title }}</li>
     </ul>
 
+    <svg class="icon-star">
+      <use xlink:href="/svg/sprite.svg#icon_rss"></use>
+    </svg>
+
     <router-link to="/">home</router-link>
     <router-link to="/foo">Foo</router-link>
     <router-link to="/bar">Bar</router-link>

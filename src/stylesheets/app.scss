@@ -1,8 +1,29 @@
-@import 'normalize';
-@import 'sprites/sprite_icons';
+//
+// ITCSS
+//
+// Settings プリプロセッサで利用するグローバル変数や全体の設定
+// Tools プリプロセッサで利用するmixinやfunctionなど
+// Generic normalizeやresetなど
+// Base 要素型セレクタ
+// Objects 装飾を持たないデザインパターン(レイアウト目的のスタイルなど)
+// Components コンポーネント 装飾のスタイルを持つUIパーツ
+// Trums ヘルパー !importantを使って良い
+//
+
+@import './settings/variables';
+@import './tools/mixins';
+@import './generic/normalize';
+@import './sprites/sprite_icons';
+@import './base/base';
+@import './trumps/helper';
 
 .test {
   @include sprite($icon_first);
   display: flex;
 }
 
+.icon-star {
+  width: 100px;
+  height: 100px;
+  fill: red;
+}
