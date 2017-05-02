@@ -1,7 +1,7 @@
 <template>
   <div class="app-container">
     Clicked: {{ $store.state.count }} times, count is {{ evenOrOdd }}
-    <button @click="increment(111)">+</button>
+    <v-touch tag="button" @tap="increment(1)">+</v-touch>
     <button @click="decrement">-</button>
     <button @click="getDummyData">getDummyData</button>
 

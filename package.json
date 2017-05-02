@@ -57,6 +57,7 @@
     "svg4everybody": "^2.1.8",
     "vue": "^2.3.0",
     "vue-router": "^2.4.0",
+    "vue-touch": "next",
     "vuex": "^2.3.1"
   }
 }

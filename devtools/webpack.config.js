@@ -3,10 +3,7 @@ import config from './config';
 
 module.exports = {
   entry: {
-    app: [
-      'vue',
-      `${config.SRC_PATH}/javascripts/app.js`
-    ]
+    app: `${config.SRC_PATH}/javascripts/app.js`
   },
 
   output: {
