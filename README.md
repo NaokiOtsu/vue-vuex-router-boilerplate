@@ -16,7 +16,7 @@
 ## Build Setup
 
 ```bash
-# モジュールのインストール
+# インストール
 $ yarn install
 
 # 開発
