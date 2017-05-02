@@ -7,10 +7,10 @@
 
 ```bash
 .   
-├ public # 本番用ファイル(minify後のJS,CSSや圧縮後の画像など)  
-├ dest # 開発用ファイル(minifyされてないJS,CSSなど)  
-├ src # 開発用ソースファイル  
-├ devtools # gulpやwebpack設定ファイル  
+├ public # 本番用
+├ dest # 開発用
+├ src # 開発ソース  
+├ devtools # gulpやwebpackの設定
 ```
 
 ## Build Setup
