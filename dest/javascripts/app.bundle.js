@@ -10931,7 +10931,7 @@ new _vue2.default({
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var dummyData = [{ "id": 1, "title": "hoge", "price": 500 }, { "id": 2, "title": "fuga", "price": 100 }, { "id": 3, "title": "bar", "price": 900 }];
+var dummyData = [{ id: 1, title: 'hoge', price: 500 }, { id: 2, title: 'fuga', price: 100 }, { id: 3, title: 'bar', price: 900 }];
 
 exports.default = {
   getDummyData: function getDummyData(callback) {
@@ -13443,7 +13443,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/naoki-otsu/Desktop/git/vue-vuex-router-boilerplate/src/javascripts/components/App.vue"
+Component.options.__file = "/Users/naoki.otsu/Desktop/git/vue-vuex-router-boilerplate/src/javascripts/components/App.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] App.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -13481,7 +13481,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/naoki-otsu/Desktop/git/vue-vuex-router-boilerplate/src/javascripts/components/Bar.vue"
+Component.options.__file = "/Users/naoki.otsu/Desktop/git/vue-vuex-router-boilerplate/src/javascripts/components/Bar.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Bar.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -13519,7 +13519,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/naoki-otsu/Desktop/git/vue-vuex-router-boilerplate/src/javascripts/components/Foo.vue"
+Component.options.__file = "/Users/naoki.otsu/Desktop/git/vue-vuex-router-boilerplate/src/javascripts/components/Foo.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Foo.vue: functional components are not supported with templates, they should use render functions.")}
 

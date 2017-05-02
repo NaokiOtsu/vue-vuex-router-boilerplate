@@ -6,10 +6,10 @@
 ## Directorys
 
 ```bash
-.   
+.
 ├ public # 本番用
 ├ dest # 開発用
-├ src # 開発ソース  
+├ src # 開発ソース
 ├ devtools # gulpやwebpackの設定
 ```
 
